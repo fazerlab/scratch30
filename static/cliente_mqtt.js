@@ -191,7 +191,7 @@ ExampleExtension.prototype.publicar_mqtt = function (args) {
 // MQTT publicar_direcao_robo_mqtt - envia mensagem de texto com direcao do robo
 ExampleExtension.prototype.publicar_direcao_robo_mqtt = function (args) {      
 	  console.log(ip_broker) ;	
-      var client  = mqtt.connect('ws://192.168.0.10:1884')  
+      var client  = mqtt.connect('wss://192.168.0.10:1884')  
       client.on('connect', function () {
        console.log("conectou") 
        client.subscribe('presence', function (err) {
