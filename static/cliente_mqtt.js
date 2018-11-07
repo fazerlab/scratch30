@@ -175,7 +175,7 @@ ExampleExtension.prototype.publicar_mqtt = function (args) {
     
     
 	  console.log(ip_broker) ;	
-      var client  = mqtt.connect('ws://192.168.0.10:1884')  
+      var client  = mqtt.connect('wss://192.168.0.10:1884')  
       client.on('connect', function () {
        console.log("conectou") 
        client.subscribe('presence', function (err) {
